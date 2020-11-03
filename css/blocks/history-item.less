@@ -1,0 +1,42 @@
+// main: ../index.less
+
+.history__item {
+    line-height: 1.385;
+    text-align: left;
+    border: 2px solid @btn-color;
+    padding-top: 1.563em;
+    padding-bottom: 1.75em;
+    position: relative;
+    &:hover {
+        background-color: @btn-color;
+        color: @gray-93;
+        &::before {
+            border: 0.188em solid transparent;
+            border-top: 0.188em solid @btn-color;
+            border-right: 0.188em solid @btn-color;
+        }
+    }
+    .history__event {
+        font-family: @monserrat;
+        font-size: @fz13;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 0;
+    }
+    .history__meta {
+        font-size: @fz11;
+        display: block;
+        line-height: 2;
+        text-transform: initial;
+        letter-spacing: 0.01em;
+    }
+    .history__desc {
+        margin-bottom: 0;
+        font-weight: 700;
+        font-size: @fz14;
+        & span {
+            display: block;
+            margin-top: 1.188em;
+        }
+    }
+}

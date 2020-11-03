@@ -1,0 +1,214 @@
+/*---color-----*/
+/*-----font-size------*/
+/*-------font-family-----*/
+.section-title {
+  position: relative;
+  text-align: center;
+  margin: 0;
+  font-family: 'Amsdam cyr-lat';
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 3.625rem;
+  margin-top: 3rem;
+}
+.divider {
+  content: ' ';
+  display: block;
+  position: absolute;
+  width: 11.625rem;
+  height: 0.313rem;
+  top: calc(1.68rem + 1.75rem);
+  left: calc(50% - 5.8125rem);
+}
+.section-text {
+  margin-top: 0;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.8;
+  font-weight: 700;
+  padding: 0 4.375rem;
+  margin-bottom: 2.525rem;
+}
+@media (max-width: 769px) {
+  .section-text {
+    font-size: 1.125rem;
+    line-height: 1.5;
+  }
+}
+.btn {
+  border: 2px solid hsl(0, 2%, 24%);
+  display: inline-block;
+  text-align: center;
+  line-height: 2.6;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  color: hsl(0, 2%, 24%);
+  background-color: transparent;
+  transition: background-color 0.2s linear, color 0.2s linear;
+}
+.btn:hover {
+  background-color: hsl(0, 2%, 24%);
+}
+.clearfix:after {
+  content: ' ';
+  display: block;
+  clear: both;
+}
+@keyframes direction {
+  0% {
+    top: -0.1vw;
+  }
+  50% {
+    top: 0.4vw;
+  }
+  100% {
+    top: -0.1vw;
+  }
+}
+@keyframes btn {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.15, 1.15);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  2% {
+    transform: translateX(-0.2em);
+  }
+  4% {
+    transform: translateX(0.2em);
+  }
+  6% {
+    transform: translateX(-0.35em);
+  }
+  8% {
+    transform: translateX(0.35em);
+  }
+  10% {
+    transform: translateX(-0.5em);
+  }
+  12% {
+    transform: translateX(0.5em);
+  }
+  14% {
+    transform: translateX(-0.4em);
+  }
+  16% {
+    transform: translateX(0.35em);
+  }
+  18% {
+    transform: translateX(-0.2em);
+  }
+  20% {
+    transform: translateX(0em);
+  }
+}
+textarea:focus::-webkit-input-placeholder,
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+textarea:focus:-moz-placeholder,
+input:focus:-moz-placeholder {
+  color: transparent;
+}
+/* FF 4-18 */
+textarea:focus::-moz-placeholder,
+input:focus::-moz-placeholder {
+  color: transparent;
+}
+/* FF 19+ */
+textarea:focus:-ms-input-placeholder,
+input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+/* IE 10+ */
+:root {
+  -ms-overflow-style: none;
+  box-sizing: border-box;
+  font-size: calc(0.5em + 0.585vw);
+  /* optional: show position indicator in red */
+}
+:root ::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  /* remove scrollbar space */
+  background: transparent;
+  /* optional: just make scrollbar invisible */
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+html {
+  min-width: 320px;
+}
+body {
+  margin: 0;
+  font-family: 'Crimson Text', serif;
+  letter-spacing: 0.075rem;
+}
+.wrapper {
+  max-width: 73.125em;
+  margin: 0 auto;
+  padding: 0 0.938em;
+  overflow: hidden;
+}
+.masonry-blog {
+  background: url(../images/blog-banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin-top: 3.9em;
+}
+@media (max-width: 768px) {
+  .masonry-blog {
+    margin-top: 3.2em;
+  }
+}
+.masonry-blog__container {
+  height: 21em;
+  position: relative;
+}
+.masonry-blog__content {
+  text-align: center;
+  position: absolute;
+  top: 6.5em;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  color: hsl(0, 0%, 100%);
+}
+.masonry-blog__title {
+  font-family: 'Amsdam cyr-lat';
+  font-size: 1.8rem;
+  position: relative;
+  margin: 0;
+  margin-bottom: 1.9rem;
+}
+.masonry-blog__title::after {
+  content: ' ';
+  display: block;
+  position: absolute;
+  width: 15.625rem;
+  height: 0.313rem;
+  top: calc(1.68rem + 2.3rem);
+  left: calc(50% - 7.812rem);
+  background: url(../images/blog-waveline.png) 0 0 / cover no-repeat;
+}
+.masonry-blog__link {
+  margin: 0;
+  font-size: 0.875rem;
+  font-family: 'Crimson Text', serif;
+}
